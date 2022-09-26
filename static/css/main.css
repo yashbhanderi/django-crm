@@ -1,0 +1,24 @@
+#logo {
+    width: 110px;
+    height: 70px;
+    margin-right: 20px;
+}
+
+body {
+    background-color: #ebeff5;
+}
+
+#total-orders {
+    background-color: #4cb4c7;
+}
+/* #total-orders > .card-header {
+    background-color: #1d464e;
+} */
+
+#orders-delivered {
+    background-color: #7abecc;
+}
+
+#orders-pending {
+    background-color: #7cd1c0;
+}

@@ -1,0 +1,17 @@
+{% extends 'accounts/base.html' %} {% include 'accounts/navbar.html' %} {% block content %}
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card card-body">
+            <p>Are you sure you want to delete <strong>{{order}}</strong> ?</p>
+
+            <form action="{% url 'delete_order' pk %}" method="POST">
+                {% csrf_token %}
+                <input class="btn btn-md btn-danger" type="submit" name="flag" value="Yes" />
+                <input class="btn btn-md btn-info" type="submit" name="flag" value="Cancel" />
+            </form>
+        </div>
+    </div>
+
+    {% endblock content %}
+</div>
